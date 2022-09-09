@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container container-fluid d-flex justify-content-center align-items-center min-vh-100">
+      <div class="d-flex flex-column">
+        <h1>Password Generator</h1>
+        <div class="d-flex flex-column gap-2 mt-2">
+          <label for="passwordLength" class="text-uppercase fw-bold">Panjang Password</label>
+          <input type="number" class="form-control form-control-lg" id="passwordLength" />
+          <label for="password" class="text-uppercase fw-bold">Password</label>
+          <input type="password" class="form-control form-control-lg" id="password" />
+          <button onclick="getPassword()" class="btn btn-dark text-uppercase fw-bold btn-lg mt-2">Generate Password</button>
+          <a onclick="savePassword()" id="saveBtn" class="btn btn-primary text-uppercase fw-bold btn-lg mt-2">Save Password</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
